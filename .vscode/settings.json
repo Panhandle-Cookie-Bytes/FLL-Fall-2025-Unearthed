@@ -17,6 +17,8 @@
         "pyproject.toml": true,
         "colorTest.py": true,
         "master_program.py": true,
+        "battery_test.py": true,
+        "LICENSE": true,
         "utils.py": true,
         ".idea/": true,
         ".mypy_cache": true
