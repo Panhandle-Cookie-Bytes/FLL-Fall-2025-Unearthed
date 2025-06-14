@@ -72,30 +72,3 @@ if __name__ == "__main__":
     br = BaseRobot()
     Run(br)
 ~~~
-
-
-keybindings.json
-~~~json
-[
-    {
-        "key" : "ctrl+shift+l",
-        "command" : "workbench.action.tasks.runTask",
-        "args": "Run on robot"
-    },
-    {
-        "key" : "ctrl+alt+l",
-        "command" : "workbench.action.tasks.runTask",
-        "args": "Run on any robot"
-    },
-    {
-        "key" : "ctrl+shift+9",
-        "command" : "workbench.action.tasks.runTask",
-        "args": "Run master_program.py on robot"
-    },
-    {
-        "key" : "ctrl+alt+9",
-        "command" : "workbench.action.tasks.runTask",
-        "args": "Run master_program.py on any robot"
-    }
-]
-~~~
