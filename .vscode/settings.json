@@ -32,6 +32,7 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true
     },
+    "python.analysis.typeCheckingMode": "off",
     "codetogether.virtualCursorJoin": "sharedVirtualCursor",
     "editor.rulers": [
         80
