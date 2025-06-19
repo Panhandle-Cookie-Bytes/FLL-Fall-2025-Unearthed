@@ -20,7 +20,7 @@
                 ],
                 "pattern": [
                     {
-                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in.*$",
                         "file": 1,
                         "line": 2
                     },
@@ -59,7 +59,7 @@
                 ],
                 "pattern": [
                     {
-                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in.*$",
                         "file": 1,
                         "line": 2
                     },
@@ -112,7 +112,7 @@
                 ],
                 "pattern": [
                     {
-                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in.*$",
                         "file": 1,
                         "line": 2
                     },
@@ -151,7 +151,7 @@
                 ],
                 "pattern": [
                     {
-                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in.*$",
                         "file": 1,
                         "line": 2
                     },
