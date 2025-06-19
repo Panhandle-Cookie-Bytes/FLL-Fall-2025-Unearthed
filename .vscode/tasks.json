@@ -15,13 +15,20 @@
             "problemMatcher": {
                 "owner": "python",
                 "fileLocation": [
-                    "absolute"
+                    "relative",
+                    "${workspaceFolder}"
                 ],
-                "pattern": {
-                    "regexp": "^(.*)File(.*)(C:(.*)\\.py)(.*)(line(\\s*))([0-9]+),",
-                    "file": 3,
-                    "line": 8
-                }
+                "pattern": [
+                    {
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "file": 1,
+                        "line": 2
+                    },
+                    {
+                        "regexp": "(^.*\\:.*)",
+                        "message": 1
+                    }
+                ]
             },
             "presentation": {
                 "echo": true,
@@ -47,13 +54,20 @@
             "problemMatcher": {
                 "owner": "python",
                 "fileLocation": [
-                    "absolute"
+                    "relative",
+                    "${workspaceFolder}"
                 ],
-                "pattern": {
-                    "regexp": "^(.*)File(.*)(C:(.*)\\.py)(.*)(line(\\s*))([0-9]+),",
-                    "file": 3,
-                    "line": 8
-                }
+                "pattern": [
+                    {
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "file": 1,
+                        "line": 2
+                    },
+                    {
+                        "regexp": "(^.*\\:.*)",
+                        "message": 1
+                    }
+                ]
             },
             "presentation": {
                 "echo": true,
@@ -93,13 +107,20 @@
             "problemMatcher": {
                 "owner": "python",
                 "fileLocation": [
-                    "absolute"
+                    "relative",
+                    "${workspaceFolder}"
                 ],
-                "pattern": {
-                    "regexp": "^(.*)File(.*)(C:(.*)\\.py)(.*)(line(\\s*))([0-9]+),",
-                    "file": 3,
-                    "line": 8
-                }
+                "pattern": [
+                    {
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "file": 1,
+                        "line": 2
+                    },
+                    {
+                        "regexp": "(^.*\\:.*)",
+                        "message": 1
+                    }
+                ]
             },
             "presentation": {
                 "echo": true,
@@ -125,13 +146,20 @@
             "problemMatcher": {
                 "owner": "python",
                 "fileLocation": [
-                    "absolute"
+                    "relative",
+                    "${workspaceFolder}"
                 ],
-                "pattern": {
-                    "regexp": "^(.*)File(.*)(C:(.*)\\.py)(.*)(line(\\s*))([0-9]+),",
-                    "file": 3,
-                    "line": 8
-                }
+                "pattern": [
+                    {
+                        "regexp": "^.*File.*\\\"(.*\\.py).*(\\b\\d{1,}\\b)(.*)in\\ Run$",
+                        "file": 1,
+                        "line": 2
+                    },
+                    {
+                        "regexp": "(^.*\\:.*)",
+                        "message": 1
+                    }
+                ]
             },
             "presentation": {
                 "echo": true,
