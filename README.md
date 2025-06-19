@@ -1,7 +1,6 @@
-# Fall-2025-Unearthed
+# Fall-2025-Unearthed, FLL Team 24277
 Base robot, missions, and materials for the Fall 2025 FLL Season "Unearthedd".
 
-# FLL Team 24277  
 ##  Introduction
 
 We are not "giving away solutions" here. If you are looking for mission solutions, you'll just have to figure them out yourself :) [Read our statement on the FLL "Discovery" core value here.](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed/blob/main/help/discovery.md)
