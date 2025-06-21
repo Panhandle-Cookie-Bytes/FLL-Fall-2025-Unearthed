@@ -363,9 +363,7 @@ class BaseRobot:
         while it is driving \
         the acceleration is on a 1-100 scale \
         """
-        speed = RescaleStraightSpeed(
-            speedPct
-        )  # TODO: Ensure speed is positive
+        speed = RescaleStraightSpeed(speedPct)
         acceleration = RescaleStraightAccel(accelerationPct)
         self.robot.use_gyro(gyro)
         self.robot.settings(acceleration, speed)
@@ -404,8 +402,7 @@ class BaseRobot:
         wait(millis)
         self.robot.brake()
 
-    # TODO driveUntilStalled() needs comments
-    def driveUntilStalled(  # TODO add stall parameter
+    def driveUntilStalled(
         self,
         # stallPct=DEFAULT_STALL_PCT,
         # think about above line later
@@ -420,15 +417,13 @@ class BaseRobot:
         # self.robot.settings(straight_speed=-999)
         self.robot.settings(straight_acceleration=acceleration)
         self.robot.drive(spd, 0)
-        while not self.robot.stalled():  # TODO: Change to use stall parameter
+        while not self.robot.stalled():
             wait(50)
         self.robot.brake()
 
-    # TODO waitForMillis needs comments
     def waitForMillis(self, millis):
         wait(millis)
 
-    # TODO waitForForwardButton() needs comments
     def waitForForwardButton(
         self,
     ):
@@ -438,7 +433,6 @@ class BaseRobot:
                 break
             wait(10)
 
-    # TODO waitForBackButton() needs comments
     def waitForBackButton(
         self,
     ):
@@ -448,7 +442,6 @@ class BaseRobot:
                 break
             wait(10)
 
-    # TODO turnInPlace() needs comments
     def turnInPlace(
         self,
         angle,
@@ -462,13 +455,12 @@ class BaseRobot:
         This is
 
         """
-        speed = RescaleTurnSpeed(speedPct)  # TODO: Ensure speed is positive
+        speed = RescaleTurnSpeed(speedPct)
         acceleration = RescaleTurnAccel(accelerationPct)
         self.robot.use_gyro(gyro)
         self.robot.settings(acceleration, speed)
         self.robot.turn(angle, then, wait)
 
-    # TODO curve() needs comments
     def curve(
         self,
         radius,
@@ -477,7 +469,7 @@ class BaseRobot:
         then=Stop.BRAKE,
         wait=True,
         gyro=True,
-        accelerationPct=DEFAULT_TURN_ACCEL_PCT,  # FIXME: Wrong default
+        accelerationPct=DEFAULT_TURN_ACCEL_PCT,
     ):
         """Drive the robot in a curve
 
@@ -512,16 +504,10 @@ class BaseRobot:
         Defaults to DEFAULT_TURN_ACCEL_PCT.
 
         """
-        speed = RescaleStraightSpeed(
-            speedPct
-        )  # TODO: Ensure speed is positive
-        acceleration = RescaleTurnAccel(
-            accelerationPct
-        )  # FIXME: Wrong rescale
+        speed = RescaleStraightSpeed(speedPct)
+        acceleration = RescaleTurnAccel(accelerationPct)
         self.robot.use_gyro(gyro)
-        self.robot.settings(
-            acceleration, speed
-        )  # FIXME: Need to set turn_rate & turn_acceleration only
+        self.robot.settings(acceleration, speed)
         self.robot.curve(radius, angle, then, wait)
 
     def driveArcDist(
