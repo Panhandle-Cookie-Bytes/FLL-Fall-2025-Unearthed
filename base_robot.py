@@ -17,7 +17,7 @@ from pybricks import version
 from utils import *
 
 # All default constant percentages will be defined here
-DEFAULT_MED_MOT_SPEED_PCT = 100  # normal attachment moter speed, % value
+DEFAULT_MED_MOT_SPEED_PCT = 90  # normal attachment moter speed, % value
 DEFAULT_MED_MOT_ACCEL_PCT = 80
 DEFAULT_BIG_MOT_SPEED_PCT = 80  # normal wheels moter speed, % value
 DEFAULT_BIG_MOT_ACCEL_PCT = 80
@@ -378,41 +378,23 @@ class BaseRobot:
         gyro: bool = True,
         accelerationPct: int = DEFAULT_BIG_MOT_ACCEL_PCT,
     ):
-        """
-        driveForMillis moves \
-        the robot forward for a certain amount of time \
-        Paramaters:
-        -------------
-        Millis: how long the robot will move for \
-        the time is measures in milliseconds \
-        so 5000 would be 5 seconds
-        -------------
-        speedPct: this controls how fast the robot will move \
-        the speed percent is from -100 to 100 \
-        the code will not let you put in zero \
-        positive numbers will move the robot forward \
-        and negative numbers backward \
-        -------------
-        then: the function then lets the robot know \
-        what to do after running the line of code \
-        Our default for then is stop.BRAKE \
-        stop.BRAKE tells the robot that when it stops \
-        to stop and then dont do anything \
-        untill the next line of code \
-        -------------
-        # waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaait: this tells the robot if it should wait \
-        for the next line of code or \
-        run both lines of code at the same time
-        -------------
-        gyro: gyro is used most of the time during our code \
-        this function gives us the option to turn off gyro \
-        if we need to for some reason \
-        gyro is  \
-        -------------
-        accelerationPct: this function tells the robot \
-        how much acceleration the robot will have \
-        while it is driving \
-        the acceleration is on a 1-100 scale \
+        """Drives the robot for the given amount of millis 
+
+        Example:
+        >>> driveForMillis(millis=1000) #drive the robot for one sec
+        
+        Args:
+        millis (REQUIRED, integer): the millis is the time you set \
+        1000 millis = 1sec
+
+        speedPct (OPTIONAL,intteger): the speed the robot goes during the \
+        millis
+
+        gyro (OPTIONAL, interger):  Use the gyro. Defaults to True
+
+        accelerationPct (OPTIONAL, integer): the percent of how\
+        fast the robot goes during the millis
+    
         """
         speed = RescaleStraightSpeed(speedPct)
         acceleration = RescaleStraightAccel(accelerationPct)
@@ -476,6 +458,10 @@ class BaseRobot:
         then=Stop.BRAKE,
         accelerationPct=DEFAULT_TURN_ACCEL_PCT,
     ):
+        """
+        This is
+
+        """
         speed = RescaleTurnSpeed(speedPct)  # TODO: Ensure speed is positive
         acceleration = RescaleTurnAccel(accelerationPct)
         self.robot.use_gyro(gyro)
