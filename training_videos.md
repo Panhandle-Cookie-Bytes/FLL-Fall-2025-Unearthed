@@ -10,6 +10,8 @@ Five VS Code Tips:            https://www.youtube.com/watch?v=HIqONcVBEm0 (3 min
 
 Five more VS Code tips:       https://www.youtube.com/watch?v=MLvLiWueESY (3 minutes)
 
+Merge conflicts:              https://www.youtube.com/watch?v=HosPml1qkrg (8 minutes)
+
 
 ## Python
 
