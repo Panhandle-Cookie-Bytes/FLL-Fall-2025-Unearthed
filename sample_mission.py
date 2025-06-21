@@ -12,7 +12,6 @@ def Run(br: BaseRobot):
     # It MUST be indented just like the lines below
 
     br.driveForDistance(distance=105, speedPct=80, then=Stop.BRAKE, wait=True)
-    br.turnInPlace(angle=-66, speedPct=45)
 
 
 # Leave everything below here and don't type anything below this line
