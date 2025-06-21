@@ -10,6 +10,9 @@
         "**/.vscode/": true,
         "**/__pycache__/": true,
         "**/.gitignore": true,
+        "**/.python-version": true,
+        "**/main.py": true,
+        "uv.lock": true,
         "**/README.md": true,
         "*.code-profile": true,
         "base_robot*.py": true,
@@ -32,6 +35,7 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true
     },
+    "python.analysis.typeCheckingMode": "off",
     "codetogether.virtualCursorJoin": "sharedVirtualCursor",
     "editor.rulers": [
         80
