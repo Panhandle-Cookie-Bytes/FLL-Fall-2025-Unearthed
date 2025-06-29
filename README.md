@@ -1,5 +1,5 @@
 # Fall-2025-Unearthed, FLL Team 24277
-Base robot, missions, and materials for the Fall 2025 FLL Season "Unearthedd".
+Pybricks, VS Code setup, base robot, missions, and materials for the Fall 2025 FLL Season "Unearthed".
 
 ##  Introduction
 
