@@ -36,3 +36,5 @@ https://www.youtube.com/watch?v=qwAFL1597eM
 (6:15:44) Chapter 19 - Exceptions & Errors (12 minutes)
 
 Python imports:               https://www.youtube.com/watch?v=XcfxkHrHTVE (7 minutes)
+
+if __name__ == "__main__"     https://www.youtube.com/watch?v=OBabwRH0XUo (5 minutes)
