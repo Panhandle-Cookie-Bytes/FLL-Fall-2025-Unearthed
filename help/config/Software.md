@@ -13,7 +13,6 @@ pybricks https://pybricks.com/ https://code.pybricks.com/ and https://beta.pybri
 Nothing to install on your computer, but you will need to install it on your robot.
 
 uv python package manager
-# On Windows.
 ```
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
