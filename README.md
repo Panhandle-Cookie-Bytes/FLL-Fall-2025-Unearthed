@@ -13,7 +13,7 @@ Very helpful page here about how to use pybricks with VS Code: https://pybricks.
 
 Detailed instructions are [here](https://github.com/MrGibbage/fll-pybricks-vscode-tutorial), but this is a quick summary
 
-1. Install [necessary software](https://github.com/FLL-Team-24277/Fall-2025-Unearthed/blob/main/help/config/Software.md).
+1. Install [necessary software](https://github.com/FLL-Team-24277/FLL-Fall-2025-Unearthed/blob/main/help/config/Software.md).
 2. Each team member creates their own github account. REMINDER: Be sure to use an email account that they can check at school (github emails may be blocked). They will also have to set up two-factor authentication. Also recommend that the team member keep that github page open and logged in while completing these instructions because you will need it for authentication in step 9 below. Remind them to not forget their password or how they use 2FA!
 3. Add each account as a collaborator for this project [here](https://github.com/FLL-Team-24277/Fall-2024-Submerged/settings/access). Instructions [here](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
 4. The team member will need to confirm and accept the invitation. At that point they can push updates to the project.
