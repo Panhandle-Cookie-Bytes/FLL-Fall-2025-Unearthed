@@ -27,7 +27,6 @@
         ".mypy_cache": true
     },
     "task.allowAutomaticTasks": "on",
-    "python.analysis.typeCheckingMode": "basic",
     "git.postCommitCommand": "sync",
     "git.autofetch": true,
     "git.enableSmartCommit": true,
