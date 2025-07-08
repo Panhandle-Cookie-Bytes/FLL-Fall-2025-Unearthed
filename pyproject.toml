@@ -9,4 +9,4 @@ dependencies = [
     "pybricksdev>=1.1.0",
 ]
 [tool.pyright]
-typeCheckingMode = "off"
+typeCheckingMode = "basic"
