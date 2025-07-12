@@ -32,5 +32,61 @@
 			"br.turnInPlace(angle=${1}, speedPct=${2:45})"
 		],
 		"description": "Turn the robot in-place"
+	},
+	"Drive Straight Distance": {
+		"prefix": [
+			"dfd"
+		],
+		"body": [
+			"br.driveForDistance(distance=${1}, speedPct=${2:80}, then=${3:Stop.BRAKE}, wait=${4:True})"
+		],
+		"description": "Drive the robot straight for a given distance"
+	},
+	"Turn in Place": {
+		"prefix": [
+			"tip"
+		],
+		"body": [
+			"br.turnInPlace(angle=${1}, speedPct=${2:45})"
+		],
+		"description": "Turn the robot in-place"
+	},
+		"Drive for millisecons": {
+		"prefix": [
+			"dfm"
+		],
+		"body": [
+			"br.driveForMillis(millis=${1}, speedPct=${2:80})"
+		],
+		"description": "drive for milliseconds"
+	},
+
+			"moveRightAttachmentMotorForMillis": {
+		"prefix": [
+			"rmm"
+		],
+		"body": [
+			"br.moveRightAttachmentMotorForMillis(millis=${1})"
+		],
+		"description": "moves Right Attachment Motor For Millies "
+	},
+			"moveRightAttachmentMotorForDegres": {
+		"prefix": [
+			"rmd"
+		],
+		"body": [
+			"br.moveRightAttachmentMotorForDegrees(degrees=${1})"
+		],
+		"description": "moves Right Attachment Motor For Degrees "
+	},
+		"waitForBackButton": {
+		"prefix": [
+			"wbb"
+		],
+		"body": [
+			"br.waitForBackBUtton()"
+		],
+		"description": "waits For Back Button "
+
 	}
 }
