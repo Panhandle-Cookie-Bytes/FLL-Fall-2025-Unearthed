@@ -33,24 +33,6 @@
 		],
 		"description": "Turn the robot in-place"
 	},
-	"Drive Straight Distance": {
-		"prefix": [
-			"dfd"
-		],
-		"body": [
-			"br.driveForDistance(distance=${1}, speedPct=${2:80}, then=${3:Stop.BRAKE}, wait=${4:True})"
-		],
-		"description": "Drive the robot straight for a given distance"
-	},
-	"Turn in Place": {
-		"prefix": [
-			"tip"
-		],
-		"body": [
-			"br.turnInPlace(angle=${1}, speedPct=${2:45})"
-		],
-		"description": "Turn the robot in-place"
-	},
 		"Drive for millisecons": {
 		"prefix": [
 			"dfm"
@@ -79,14 +61,34 @@
 		],
 		"description": "moves Right Attachment Motor For Degrees "
 	},
-		"waitForBackButton": {
+		"wait for back button": {
 		"prefix": [
 			"wbb"
 		],
 		"body": [
-			"br.waitForBackBUtton()"
+			"br.waitForBackButton()"
 		],
 		"description": "waits For Back Button "
 
-	}
-}
+	},
+	"wait for forward button": {
+		"prefix": [
+			"wfb"
+		],
+		"body": [
+			"br.waitForForwardButton()"
+		],
+		"description": "waits For Forward Button "
+	},
+
+			"move left attachment motor for millis": {
+		"prefix": [
+			"lmm"
+		],
+		"body": [
+			"br.moveRightAttachmentMotorForMillis(millis=${1})"
+		],
+		"description": "moves left attachment motor for millies "
+	},
+
+}	
