@@ -90,5 +90,13 @@
 		],
 		"description": "moves left attachment motor for millies "
 	},
-
+    	"move left attachment motor for degrees": {
+		"prefix": [
+			"lmd"
+		],
+		"body": [
+			"br.moveRightAttachmentMotorForDegrees(degrees=${1})"
+		],
+			"description": "moves left attachment motor for degrees "
+	}		
 }	

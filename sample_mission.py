@@ -18,7 +18,7 @@ def Run(br: BaseRobot):
     br.moveRightAttachmentMotorForDegrees(degrees=180)
     br.waitForBackButton()
     br.waitForForwardButton()
-    wfb
+    br.moveRightAttachmentMotorForDegrees(degrees=10)
 
 
 # Leave everything below here and don't type anything below this line
