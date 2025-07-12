@@ -324,6 +324,7 @@ class BaseRobot:
         wait=True,
         gyro=True,
         accelerationPct=DEFAULT_BIG_MOT_ACCEL_PCT,
+        wallsquare=False,
     ):
         """
         driveForDistance moves \
