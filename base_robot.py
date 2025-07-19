@@ -321,7 +321,6 @@ class BaseRobot:
         distance,
         speedPct=DEFAULT_BIG_MOT_SPEED_PCT,
         then=Stop.BRAKE,
-        wait=True,
         gyro=True,
         accelerationPct=DEFAULT_BIG_MOT_ACCEL_PCT,
         wallsquare=False,
@@ -367,8 +366,13 @@ class BaseRobot:
         speed = RescaleStraightSpeed(speedPct)
         acceleration = RescaleStraightAccel(accelerationPct)
         self.robot.use_gyro(gyro)
+        if wallsquare == True:
+            self.robot.drive(RescaleStraightSpeed(-60), 0)
+            wait(150)
+            self.robot.brake()
+
         self.robot.settings(acceleration, speed)
-        self.robot.straight(distance, then, wait)
+        self.robot.straight(distance, then)
 
     def driveForMillis(
         self,
